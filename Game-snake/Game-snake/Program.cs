@@ -10,22 +10,22 @@ namespace Game_snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point();
-            p1.x = 1;
-            p1.y = 3;
-            p1.sym = '*';
+            Point p1 = new Point(1,1,'#');
             p1.Draw();
 
-            Console.ReadKey();
-
-            Point p2 = new Point();
-            p2.x = 3;
-            p2.y = 7;
-            p2.sym = '#';
+            Point p2 = new Point(2,2,'*');
             p2.Draw();
 
-            Console.ReadKey();
-        }
+            HorizontalLine line = new HorizontalLine(0,10,7,'*');
+            line.Draw();
+
+            VerticalLine vline = new VerticalLine(0, 10, 10, '#');
+            vline.Draw();
+
+
+
+            Console.ReadLine();
+        } 
 
         
     }
